@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/store_item_height"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/store_bnr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:transitionName="store_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/store_outer_banner" />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/header_gredients"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <View
+        android:id="@+id/view_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/store_item_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/store_img"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:src="@drawable/shape_circle_colored"
+        app:civ_border_color="@color/LightGray"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        app:layout_constraintBottom_toTopOf="@+id/store_opening_time"
+        android:id="@+id/store_name"
+        style="@style/text_view_large_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/store_img"
+        tools:text="Al Naseem" />
+
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/store_name"
+        android:id="@+id/store_opening_time"
+        style="@style/text_view_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:drawableStart="@drawable/ic_time_wrapper"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="end"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textSize="@dimen/font_small"
+        app:layout_constraintBottom_toTopOf="@+id/store_payment_type"
+        app:layout_constraintEnd_toStartOf="@id/store_delivery_period"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="10:00 am till 10:00 pm" />
+
+
+    <TextView
+        app:layout_constraintStart_toStartOf="@id/store_opening_time"
+        android:id="@+id/store_payment_type"
+        style="@style/text_view_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:drawableStart="@drawable/ic_payment_wrapper"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="end"
+        android:textSize="@dimen/font_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Cash" />
+
+    <ImageView
+        android:id="@+id/store_has_offers"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/store_delivery_period"
+        app:srcCompat="@drawable/ic_tag" />
+
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@+id/store_opening_time"
+        android:id="@+id/store_delivery_period"
+        style="@style/text_view_white"
+        app:layout_constraintBaseline_toBaselineOf="@+id/store_opening_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:drawableStart="@drawable/ic_delivery_wrapper"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/font_small"
+        app:layout_constraintBottom_toTopOf="@+id/store_fees"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/store_opening_time"
+        tools:text="Deliver in 45 Min" />
+
+
+    <TextView
+        android:id="@+id/store_fees"
+        style="@style/text_view_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:textSize="@dimen/font_small"
+        app:layout_constraintBaseline_toBaselineOf="@+id/store_payment_type"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/store_delivery_period"
+        tools:text="fees 200 " />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="180dp" />
+
+
+
+    <TextView
+        android:id="@+id/store_closed"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/label_closed"
+        android:textSize="@dimen/font_small"
+        app:layout_constraintBottom_toTopOf="@+id/store_opening_time"
+        app:layout_constraintTop_toBottomOf="@+id/store_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/rounded_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

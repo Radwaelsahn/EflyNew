@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/register_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/view_header"
+            layout="@layout/toolbar_back"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/registration_view_title"
+            style="@style/text_view_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_new_user"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_header" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/EditTextWhiteTheme"
+            android:id="@+id/et_firstname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:hint="@string/prompt_first_name"
+            android:inputType="text"
+            android:lines="1"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registration_view_title" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/EditTextWhiteTheme"
+            android:id="@+id/et_lastname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:hint="@string/prompt_last_name"
+            android:inputType="text"
+            android:lines="1"
+            android:background="@drawable/rounded_border_shape"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_firstname" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/EditTextWhiteTheme"
+            android:id="@+id/et_mobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:background="@drawable/rounded_border_shape"
+            android:hint="Mobile"
+            android:inputType="phone"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:lines="1"
+            android:maxLength="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_lastname" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/EditTextWhiteTheme"
+            android:id="@+id/et_stakeholder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:background="@drawable/rounded_border_shape"
+            android:hint="@string/hint_stakeholder_number"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:visibility="gone"
+            android:minWidth="280dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_mobile" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/EditTextWhiteTheme"
+            android:id="@+id/et_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:background="@drawable/rounded_border_shape"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:minWidth="280dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_stakeholder" />
+
+
+        <RadioGroup
+            android:id="@+id/gender_radio_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:background="@drawable/rounded_border_shape"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_email">
+
+            <RadioButton
+                android:id="@+id/male_radio_button"
+                style="@android:style/Widget.CompoundButton.RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/action_male"
+                android:textColor="@android:color/black" />
+
+            <RadioButton
+                android:id="@+id/female_radio_button"
+                style="@android:style/Widget.CompoundButton.RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/action_female"
+                android:textColor="@android:color/black" />
+        </RadioGroup>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/EditTextWhiteTheme"
+            android:id="@+id/et_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:background="@drawable/rounded_border_shape"
+            android:hint="@string/prompt_password"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:minWidth="280dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_insurance_no" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/EditTextWhiteTheme"
+            android:id="@+id/et_confirm_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:background="@drawable/rounded_border_shape"
+            android:hint="@string/prompt_confirm_password"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:minWidth="280dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/EditTextWhiteTheme"
+            android:id="@+id/et_zip_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:background="@drawable/rounded_border_shape"
+            android:hint="@string/enter_zip_cde"
+            android:inputType="number"
+            android:lines="1"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:minWidth="280dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/EditTextWhiteTheme"
+            android:id="@+id/et_insurance_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:background="@drawable/rounded_border_shape"
+            android:hint="@string/insurance_number"
+            android:inputType="number"
+            android:lines="1"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:minWidth="280dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_zip_code" />
+
+
+        <Button
+            android:id="@+id/email_sign_in_button"
+            style="@style/button_primary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:gravity="center"
+            android:text="@string/action_register"
+            android:textAllCaps="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_confirm_password" />
+
+
+        <!-- Login progress -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

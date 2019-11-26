@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.efly.ui.storehome.StoreHomeActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/store_item_height"
+        android:background="@color/white"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_collapseMode="parallax"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <include
+                android:id="@+id/view_store_card"
+                layout="@layout/layout_store_card"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/store_item_height"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7" />
+
+
+            <include
+                android:id="@+id/view_toolbar"
+                layout="@layout/toolbar_home"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/content"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/home_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/categories_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listitem="@layout/item_category_rounded" />
+            <!--best selling start-->
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/best_selling_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:constraint_referenced_ids="best_selling_list,see_best_selling,view_separator_best_selling,tv_best_selling" />
+
+            <TextView
+                android:id="@+id/tv_best_selling"
+                style="@style/text_view_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_16sdp"
+                android:text="@string/label_best_selling"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/categories_list" />
+
+            <View
+                android:id="@+id/view_separator_best_selling"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/LightGray"
+                android:padding="@dimen/_16sdp"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_best_selling"
+                app:layout_constraintEnd_toStartOf="@id/see_best_selling"
+                app:layout_constraintStart_toEndOf="@id/tv_best_selling"
+                app:layout_constraintTop_toTopOf="@+id/tv_best_selling" />
+
+            <TextView
+                android:id="@+id/see_best_selling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_16sdp"
+                android:text="@string/action_see_all"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv_best_selling"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/best_selling_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_best_selling"
+                tools:listitem="@layout/item_product" />
+
+            <!--best selling end-->
+            <!--best offers start-->
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/best_offers_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:constraint_referenced_ids="best_offer_list,view_title_title,view_separator_offers,see_all_best_offers" />
+
+            <TextView
+                android:id="@+id/view_title_title"
+                style="@style/text_view_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_16sdp"
+                android:text="@string/label_offers"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/best_selling_list" />
+
+            <View
+                android:id="@+id/view_separator_offers"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/LightGray"
+                android:padding="@dimen/_16sdp"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="@+id/view_title_title"
+                app:layout_constraintEnd_toStartOf="@id/see_all_best_offers"
+                app:layout_constraintStart_toEndOf="@id/view_title_title"
+                app:layout_constraintTop_toTopOf="@+id/view_title_title" />
+
+            <TextView
+                android:id="@+id/see_all_best_offers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_16sdp"
+                android:text="@string/action_see_all"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/best_selling_list" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/best_offer_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_title_title"
+                tools:listitem="@layout/item_product" />
+            <!--best offers end-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/content" />
+
+
+    <!--    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation-->
+    <!--        android:id="@+id/navigation"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="56dp"-->
+    <!--        android:layout_gravity="bottom"-->
+    <!--        android:background="@color/colorPrimary"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:itemIconTint="@color/nav_bottom_selector"-->
+    <!--        app:itemTextColor="@color/nav_bottom_selector"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:menu="@menu/navigation" />-->
+
+    <Button
+        android:id="@+id/btn_categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:background="@drawable/bg_curved_green_small"
+        android:paddingStart="@dimen/_32sdp"
+        android:paddingEnd="@dimen/_32sdp"
+        android:text="@string/categories"
+        android:visibility="gone" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

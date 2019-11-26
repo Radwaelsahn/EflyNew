@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "987350507603",
+    "firebase_url": "https://eflyrx.firebaseio.com",
+    "project_id": "eflyrx",
+    "storage_bucket": "eflyrx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987350507603:android:4933ddc00337f1c84fe6a6",
+        "android_client_info": {
+          "package_name": "com.efly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987350507603-fhc09a75dgn1u747a7u16im1veaukrkg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.efly",
+            "certificate_hash": "88ccb4203d489cdb579e94b4fc2d46fcb2196b45"
+          }
+        },
+        {
+          "client_id": "987350507603-9u9a5gnebmmb3o5r2ak291ic7ue29bbe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdppwAZI32Ms6xjXwn8amTcYVGbIQ_I30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987350507603-9u9a5gnebmmb3o5r2ak291ic7ue29bbe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

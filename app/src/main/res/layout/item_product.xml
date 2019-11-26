@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4sdp"
+    android:background="@drawable/card_background">
+
+    <ImageView
+        android:id="@+id/item_menu_image"
+        android:layout_width="115dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/item_menu_price"
+        android:textSize="@dimen/font_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textAllCaps="true"
+        android:textColor="@color/price_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_menu_image"
+        tools:text="435 USD" />
+
+    <TextView
+        android:id="@+id/item_menu_original_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:textSize="@dimen/font_small"
+        android:textAllCaps="true"
+        android:textColor="@color/red"
+        app:layout_constraintBaseline_toBaselineOf="@id/item_menu_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="1.435 USD" />
+
+
+    <TextView
+        android:id="@+id/item_menu_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:maxLines="2"
+        android:lines="2"
+        android:gravity="top"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_menu_price"
+        tools:text="This is product" />
+
+
+    <TextView
+        android:id="@+id/item_menu_desc"
+        style="@style/text_view_light"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:lines="2"
+        android:maxLines="2"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_menu_title"
+        tools:text="thia is product" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/content_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="product_detail_subtract_btn,count_view,product_detail_add_btn" />
+
+    <TextView
+        android:id="@+id/product_detail_subtract_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:text="@string/action_subtract"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_add_to_cart"
+        app:layout_constraintStart_toStartOf="@id/tv_add_to_cart"
+        app:layout_constraintTop_toTopOf="@id/tv_add_to_cart"
+      />
+
+    <TextView
+        android:id="@+id/count_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_add_to_cart"
+        app:layout_constraintEnd_toEndOf="@id/tv_add_to_cart"
+        app:layout_constraintStart_toStartOf="@id/tv_add_to_cart"
+        app:layout_constraintTop_toTopOf="@id/tv_add_to_cart"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/product_detail_add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:text="@string/action_add"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_add_to_cart"
+        app:layout_constraintEnd_toEndOf="@id/tv_add_to_cart"
+        app:layout_constraintTop_toTopOf="@id/tv_add_to_cart"
+         />
+
+
+    <TextView
+        android:id="@+id/tv_add_to_cart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:gravity="center_horizontal|bottom"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/action_add_to_cart"
+        android:drawableStart="@drawable/ic_cart"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_menu_desc"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

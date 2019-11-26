@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/toolbar" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/save_amount_top_bottom_left"
+        android:bottomRightRadius="@dimen/save_amount_top_bottom_right"
+        android:topRightRadius="@dimen/save_amount_top_bottom_right"
+        android:topLeftRadius="@dimen/save_amount_top_bottom_left"
+        />
+    <padding android:padding="@dimen/_16sdp" />
+</shape>

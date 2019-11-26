@@ -1,0 +1,357 @@
+<resources>
+    <string name="STRIPECUSTOMERID">STRIPECUSTOMERID</string>
+    <string name="fcmToken">fcmToken</string>
+    <string name="preference_file_key">com.NearHero.PREFNEARHERO</string>
+    <string name="error_timeout">Timeout</string>
+    <string name="error_connection_failed">Connection failed</string>
+    <string name="error_no_internet">No Internet</string>
+    <string name="search">search</string>
+
+    <string name="label_closed">Closed</string>
+    <string name="confirm">Confirm</string>
+    <string name="google_map_key">AIzaSyAdppwAZI32Ms6xjXwn8amTcYVGbIQ_I30</string>
+
+    <string name="app_name">Eflyrx</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_password_mismatch">Passwords are not the same</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="register"><u> Register</u></string>
+    <string name="facebook_app_id" translatable="false">242809872865905</string>
+    <string name="kuwaiti_currency">&#160;USD</string>
+    <string name="currency">%1$s USD</string>
+    <string name="prompt_first_name">First Name</string>
+    <string name="prompt_last_name">Last Name</string>
+    <string name="prompt_mobile_number">Landline</string>
+    <string name="prompt_gender">Gender:</string>
+    <string name="action_register">Register</string>
+    <string name="error_full_name">Please, enter full name</string>
+    <string name="error_invalid_mobile_number">Invalid number</string>
+    <string name="action_register_from_login_page">Don\'t Have account? Register</string>
+    <string name="action_forget_password">Forget your password?</string>
+    <string name="title_create_new_user">Create New User</string>
+    <string name="title_login">Login</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+    <string name="prompt_full_name">Full Name</string>
+    <string name="action_male">Male</string>
+    <string name="action_female">Female</string>
+    <string name="action_reset_password">Send</string>
+    <string name="forget_password_title">Forget Password</string>
+    <string name="forget_password__description">Enter your mobile number you registered with\nand we will send the password to you</string>
+    <string name="action_add_to_cart">Add to Cart</string>
+    <string name="title_activity_home" translatable="false">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_offers">Offers</string>
+    <string name="title_category">Categories</string>
+    <string name="title_more">Settings</string>
+    <string name="title_account">Me</string>
+    <string name="prompt_address_name">Address name</string>
+    <string name="prompt_region">Region</string>
+    <string name="prompt_block">Block</string>
+    <string name="prompt_no_street_name">Street Address</string>
+    <string name="prompt_jadda">Jadda</string>
+    <string name="prompt_no_building_name">No/ Building Name</string>
+    <string name="prompt_floor_number">Floor Number</string>
+    <string name="prompt_apt_number">Apt. Number (Optional)</string>
+    <string name="prompt_telephone_number">Landline</string>
+    <string name="prompt_additional_directions">Additional Directions</string>
+    <string name="action_add_address">Add Address</string>
+    <string name="prompt_avenue">Judda</string>
+    <string name="prompt_house_number">House no.</string>
+    <string name="prompt_office_number">Office no.</string>
+    <string name="holder_total_price">Total:</string>
+    <string name="holder_price">Price</string>
+    <string name="label_subtotal">Subtotal</string>
+    <string name="label_operation_fees">Operation fees</string>
+    <string name="label_delivery_fee">Delivery fee</string>
+    <string name="label_total">Total</string>
+    <string name="action_confirm_order">Confirm Order</string>
+    <string name="prompt_choose_region">Choose Region</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_okay">Okay</string>
+    <string name="error_last_name">Enter last name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="action_save">Save</string>
+    <string name="prompt_select_region">Select Region</string>
+    <string name="prompt_select_store">Select Store</string>
+    <string name="label_select_your_store">Select Your Store</string>
+    <string name="label_payment">Payment</string>
+    <string name="action_cash_on_delivery">Cash on delivery</string>
+    <string name="label_choose_delivery_time">Choose delivery time</string>
+    <string name="action_checkout">Checkout</string>
+    <string name="action_edit_account">Edit account</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_notifications">Notifications</string>
+    <string name="action_order_history">Order History</string>
+    <string name="action_shipping_address">Shipping Address</string>
+    <string name="label_welcome">Welcome</string>
+    <string name="lable_loading">Loading...</string>
+    <string name="lable_your_order">Your Order</string>
+    <string name="action_see_all">See All</string>
+    <string name="label_best_selling">Featured</string>
+    <string name="label_offers">Offers</string>
+    <string name="action_subtract" translatable="false">-</string>
+    <string name="action_add" translatable="false">+</string>
+    <string name="action_close" translatable="false">X</string>
+    <string name="label_description">Description</string>
+    <string name="label_similar_items">Similar items</string>
+    <string name="hint_enter_product_name">Enter product name</string>
+    <string name="hint_search">Search</string>
+    <string name="action_change_language">Change Language</string>
+    <!--Login -->
+    <string name="login_text">Login</string>
+    <string name="user_name_text">Enter Your Email</string>
+    <string name="password_hint_text">Password</string>
+    <string name="error_login_data">Your login credentials are not correct</string>
+    <string name="don_t_have_an_account">Don\'t have an account?\t</string>
+    <string name="forget_your_password"><u>Forget your password</u></string>
+    <string name="continue_as"><u>Continue As a Guest</u></string>
+    <!--register-->
+    <string name="create_new_user">&lt;h3&gt;Create&lt;/h3&gt; new user</string>
+    <string name="title_reset_password">Reset Password</string>
+    <string name="prompt_type">Type</string>
+    <string name="label_address">Address</string>
+    <string name="label_browse_all_categories">Browse All Categories</string>
+    <string name="label_new_address">New Address</string>
+    <string name="label_category">Category</string>
+    <string name="Share">Share</string>
+    <string name="all_text">All</string>
+    <string name="action_knet">Visa Card</string>
+    <string name="label_select_shipping_address">Select Shipping Address</string>
+    <string name="title_activity_order_success" translatable="false">OrderSuccessActivity</string>
+    <string name="label_thank_you">Thank You</string>
+    <string name="label_your_order_has_been_successfully_processed">Order Number %1$s</string>
+    <string name="label_your_order_has_been_successfully_delivery">Delivery Time from %1$s to %2$s</string>
+    <string name="label_your_order_has_been_successfully_thankyou">Your order has been successfully processed!</string>
+    <string name="label_qty">Qty: %1$s</string>
+    <string name="label_price">Price: %1$s USD</string>
+    <string name="label_price_and_qty">Price %1$s x %2$s USD</string>
+    <string name="label_sku">Sku: %1$s</string>
+    <string name="error_mobile_number">Mobile number should be 8 digits</string>
+    <string name="error_password_number">Field should be 8 digits at least</string>
+    <string name="error_choose_gender">Please, choose gender</string>
+    <string name="action_delete">delete</string>
+    <string name="label_order_history">Order History</string>
+    <string name="lable_order_number"># </string>
+    <string name="label_total_items">Total Items:</string>
+    <string name="label_date">Date :</string>
+    <string name="error_select_store">Please, Select store!</string>
+    <string name="error_missing_field">Please, enter all required data</string>
+    <string name="action_about">About Eflyrx</string>
+    <string name="about_content" translatable="false">المقدمة
+\n\n
+        في عصر التقنية الحديثة والعالم التكنولوجي الواسع أضحت تطبيقات الهاتف المحمول ومواقع الانترنت
+        أقوى وأفضل وسيلة لنشر المعلومات وتقديم الخدمات على مستوى الافراد والشركات والجهات الخاصة
+        والحكومية وحتى المنظمات الدولية مما يجعل التطبيقات
+        الالكترونية ومواقع الانترنت بوابة تواصل هامة جدا في الوقت الراهن.
+\n\n
+        حقائق
+\n\n
+        - في ٢٠١٢ بلغ مستخدمي الانترنت في الكويت ٢ مليون و٩٦ الف مستخدم وكان ترتيب الكويت ٩٠ عالميا
+        بنسبة اختراق ٧٩.٢٪. \n - وصل عدد المستخدمين في عام ٢٠١٥ إلى ٣ مليون مستخدم واحتلت بذلك
+        الترتيب ٨٤ عالميا و١٢ عربيا وذلك حسب الإحصاءات المباشرة. \n - وفقا
+        لتقرير اقتصاد المعرفة العربي ٢٠١٥-٢٠١٦ (Arab Knowledge Economy Report 2015- 2016) سيصل عدد
+        مستخدمي الانترنت في العالم العربي بحلول ٢٠١٨ إلى ٢٢٦ مليون مستخدم. \n - تصدرت دول مجلس
+        التعاون الخليجي الست التصنيف العام في مؤشرات تكنولوجيا المعلومات
+        والاتصالات في العالم العربي خلال العام ٢٠١٥ وحققت الكويت أعلى نسبة في انتشار الهواتف النقالة
+        ب ١٩٤.٦٢٪. \n - على مستوى العالم العربي احتلت الكويت المركز الثاني في سباق براءات الاختراع
+        بواقع ٩٨ براءة اختراع فقط في العام ٢٠١٤ بإجمالي ٣٧٠ في السنوات
+        الموثقة السابقة.
+        في ضوء الحقائق المذكورة أعلاه فإن الخوض في مضمار التطبيقات الالكترونية والمحيط التكنولوجي
+        ليس بالأمر السهل إطلاقا، ولكن هدف سمارت مارت بتطبيقها انستا سلة هو الوصول إلى الريادة محليا
+        وإقليميا.
+\n\n
+        رؤيتنا
+\n\n
+        الوصول إلى الريادة من خلال تقديم خدمات تفوق التطلعات
+\n\n
+        رسالتنا
+\n\n
+        العمل على مواكبة تطورات وابداعات عالم التكنولوجيا في التطبيقات الالكترونية وتقديمها لعملائنا
+        بما يتناسب مع متطلباتهم وإقامة علاقة شراكة استراتيجية طويلة المدى من خلال تلبية كافة
+        احتياجات شركائنا وعملائنا بأعلى درجات الاحترافية.
+\n\n
+        خدماتنا
+\n\n
+        تقدم مؤسسة سمارت مارت لتوصيل الطلبات الاستهلاكية خدماتها الالكترونية عن طريق تطبيقها انستا
+        سلة الذي يعد الأول من نوعه على مستوى الخليج والشرق الاوسط والذي يوفر على العميل جميع
+        احتياجاته من الجمعيات التعاونية المشاركة في التطبيق إلى
+        باب البيت كما يوفر على الجمعيات التعاونية توصيل المنتجات بأنواعها وأحجامها وكمياتها إلى
+        المساهمين والعملاء، وذلك من خلال منظومة عمل متكاملة وفريق مدرب وعلى أعلى درجات من الاحترافية
+        وقسم تشغيل بموظفيه وبائعيه وسائقيه متميز بسرعة الإنجاز ودقة المواعيد.</string>
+    <string name="action_edit_address">Edit Address</string>
+    <string name="hint_old_password">Old Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="house">House</string>
+    <string name="apartment">Apartment</string>
+    <string name="office">Office</string>
+    <string name="label_member_since">Member since:&#160;</string>
+    <string name="label_address_with_cloumn">Address:</string>
+    <string name="error_connection">Please, check you internet connection!</string>
+    <string name="error_label_error">Error</string>
+    <string name="label_products">&#160;Products</string>
+    <string name="action_reorder">Reorder</string>
+    <string name="error_generic_error">Oops! Something went wrong!</string>
+    <string name="error_choose_payment_method">Please, choose payment method.</string>
+    <string name="error_choose_delivery_time">Please, choose delivery time.</string>
+    <string name="action_pending_orders">Pending Orders</string>
+    <string name="action_cancel_all_order">Cancel all order</string>
+    <string name="action_send_alternative_item">Send Alternative item</string>
+    <string name="hint_alts">Select another item form alternative items of cancel it</string>
+    <string name="label_missing_order">Missing Order</string>
+    <string name="label_missing_order_guide">You order number #%1$s from %2$s have some items not found in the store, please select another item form alternative items or cancel it</string>
+    <string name="action_show_order">Show order</string>
+    <string name="msg_missing_order">There are missing items in your order</string>
+    <string name="label_alternative_items">Alternative items</string>
+    <string name="label_missing_items">Missing Items</string>
+    <string name="msg_no_search_results">No products found</string>
+    <string name="error_choose_shipping_address">Please, choose shipping address</string>
+    <string name="error_select_all_alts">Please, Select all alternatives</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="prompt_cancel_all_order">Do you want to cancel the entire order?</string>
+    <string name="hint_cancellation_reason">Cancellation reason</string>
+    <string name="action_track_order">Track Order</string>
+    <string name="lable_order_submitted">Your order has been submitted</string>
+    <string name="lable_collecting_order">Your order is being collected now</string>
+    <string name="label_order_collected">Your order has been Collected</string>
+    <string name="label_out_for_delivery">Out for delivery</string>
+    <string name="label_delivered">Your order has been delivered</string>
+    <string name="action_view_map">View Map</string>
+    <string name="label_in_stock">in stock</string>
+    <string name="error_no_offers">There are no available offers currently</string>
+    <string name="msg_reset_pwd_success">Password has been sent over SMS</string>
+    <string name="label_operation_fee">Operation fee</string>
+    <string name="label_update_app_msg">Please, update the app to enjoy the latest features and improvements</string>
+    <string name="label_update_app_title">New Update</string>
+    <string name="action_update">Update</string>
+    <string name="hint_stakeholder_number">Stakeholder Number</string>
+    <string name="action_verify">Verify</string>
+    <string name="label_mobile_number_verification">Mobile number verification</string>
+    <string name="hint_verification_code">Verification code</string>
+    <string name="desc_verification_code">Please type the verification code sent to your mobile number</string>
+    <string name="error_invalid_sms_code">Invalid code</string>
+    <string name="action_resend_code">Resend Code</string>
+    <string name="label_store_work_time">%1$s till %2$s</string>
+    <string name="label_choose_delivery_address">Choose delivery address</string>
+    <string name="label_store_delivery_period">%1$s mins</string>
+    <string name="label_store_fees">Fees: %1$s USD</string>
+    <string name="label_store_payment_type">%1$s</string>
+    <string name="label_store_min_order">Min. order value: %1$s USD</string>
+    <string name="error_store_closed">This store is currently closed</string>
+    <string name="header_hypermarket">Select Hypermarket</string>
+    <string name="header_supermarket">Select Supermarket</string>
+    <string name="prompt_invalidate_cart">Your cart contains items from %1$s. Do you wish to clear your cart and start a new order here?</string>
+    <string name="title_invalidate_cart">Clear cart?</string>
+    <string name="mix_panel_token" translatable="false">e04e7934ba5c7a9e1477a35f4380f659</string>
+    <string name="action_call_to_cancel">Call to cancel</string>
+    <string name="select_address">Select delivery address</string>
+    <string name="delivery_address">delivery address</string>
+    <string name="action_change">change</string>
+    <string name="action_skip">Skip</string>
+    <string name="prompt_coupon_code">Add coupon code</string>
+    <string name="prompt_loyalty_code">Add Loyalty Card Number</string>
+    <string name="action_apply">Apply</string>
+    <string name="error_invalid_promo_code">Code is invalid</string>
+    <string name="label_help_and_support">Contact us</string>
+    <string name="error_min_value">Order\'s total should be more than %1$s USD</string>
+    <string name="label_communication_method">Choose communication method</string>
+    <string name="action_live_chat">Live Chat</string>
+    <string name="action_call_us">Call us</string>
+    <string name="text_back">Back</string>
+    <string name="login_text_account">Login to your account</string>
+    <string name="prompt_cancel_alt">Do you want to cancel this item?</string>
+    <string name="error_no_addresses">There are no addresses</string>
+    <string name="label_canceled">Your order has been canceled</string>
+    <string name="label_missing">Your order has missing items</string>
+    <string name="label_closed_status">The store is currently closed</string>
+    <string name="msg_promo_code_applied">Coupon code got applied successfully</string>
+    <string name="change_language">Change Language</string>
+    <string name="lang_english">English</string>
+    <string name="lang_arabic">Arabic</string>
+    <string name="lang_arabic_change">العربية</string>
+    <string name="action_filter">Filter</string>
+    <string name="add_contribution_id">Add Contribution Id</string>
+    <string name="skip">skip</string>
+    <string name="login_to_your_account">&lt;h3&gt;Login&lt;/h3&gt; to your account</string>
+    <string name="to_your_account">to your account</string>
+    <string name="splash_text">Now All Your Groceries Needs \nAt Your Doorstep Delivery</string>
+    <string name="new_user">New User</string>
+    <string name="continue_as_guest">Continue as a GUEST</string>
+    <string name="intro_convenience_title_text">Convenience</string>
+    <string name="title_2">title 2</string>
+    <string name="intro_service_title_text">Service</string>
+    <string name="intro_convenience_description">We exist to make your life easier. Our world-class delivery team will bring your order right to your place with a smile.</string>
+    <string name="description_2">Fresher food just tastes better. which means our customers only ever get the freshest and tastiest eats and drinks.</string>
+    <string name="intro_service_description">Our free personal concierge team is always ready to help you, and you\'ll always talk to a real person who understands your business and needs.</string>
+    <string name="arabic">العربية</string>
+    <string name="english">الانجليزية</string>
+    <string name="save">save</string>
+    <string name="orders_history_title">Orders</string>
+    <string name="date">Date</string>
+    <string name="price">Price</string>
+    <string name="status">Status</string>
+    <string-array name="query_suggestions">
+        <item>شوكلاتة </item>
+        <item>خبز محمص</item>
+        <item>مسحوق</item>
+        <item>اريال</item>
+        <item>خضروات</item>
+    </string-array>
+
+    <string name="order_status_in_progress" translatable="false">processing</string>
+    <string name="order_status_collected" translatable="false">collected</string>
+    <string name="order_status_collecting" translatable="false">collecting</string>
+    <string name="order_status_out_for_delivery" translatable="false">out_for_delivery</string>
+    <string name="order_status_pending_payment" translatable="false">pending_payment</string>
+    <string name="order_status_payment_review" translatable="false">payment_review</string>
+    <string name="order_status_suspected_fraud" translatable="false">fraud</string>
+    <string name="order_status_new" translatable="false">pending</string>
+    <string name="order_status_pending_missing" translatable="false">pending_missing</string>
+    <string name="order_status_out_for_delivery_holded" translatable="false">holded</string>
+    <string name="order_status_delivered" translatable="false">complete</string>
+    <string name="order_status_closed" translatable="false">closed</string>
+    <string name="order_status_canceled" translatable="false">canceled</string>
+    <string name="label_about_product">About the product</string>
+    <string name="coupon_code">Coupon code</string>
+    <string name="leave_comment">Leave a comment</string>
+    <string name="categories">Categories</string>
+    <string name="confirm_logout">Confirm Logout</string>
+    <string name="logout_confirm_message">Your cart will be reset, are you sure you still want to logout</string>
+    <string name="order_from">Order From %1$s</string>
+    <string name="order_id">ID</string>
+    <string name="send">send</string>
+    <string name="enter_zip_cde">enter zip code</string>
+    <string name="error_invalid_zipcode">Invalid zipcode</string>
+    <string name="personal_info">Personal Info</string>
+    <string name="insurance_number">Insurance Number</string>
+    <string name="creating_payment_intent">Creating payment intent…</string>
+
+    <string name="confirming_payment_intent">Confirming payment intent…</string>
+
+    <string name="retrieving_payment_intent">Retrieving payment intent…</string>
+
+    <string name="create_payment_intent_backend">First, create a payment intent on your backend.</string>
+
+    <string name="create_payment_intent">Create payment intent</string>
+
+    <string name="create_source_and_confirm_payment_intent">Second, create a source and confirm the payment intent</string>
+
+    <string name="confirm_payment_intent">Confirm payment intent</string>
+
+    <string name="retrieve_payment_intent">Retrieve payment intent</string>
+
+    <string name="error_while_retrieving_payment_intent">An error occurred while retrieving the payment intent</string>
+
+    <string name="validationErrors">Validation Errors</string>
+    <string name="ok">ok</string>
+    <string name="item_added_successfully">Item Added Successfully.</string>
+</resources>
